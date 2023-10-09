@@ -1,0 +1,23 @@
+{
+  "name": "06tut",
+  "version": "1.0.0",
+  "description": "Express tutorial",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VictorMwachi/expressJs-sever.git"
+  },
+  "author": "Victor Mwachi",
+  "license": "ISC",
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "express": "^4.18.2",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
