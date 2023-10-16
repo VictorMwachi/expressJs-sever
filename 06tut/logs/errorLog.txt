@@ -11,3 +11,4 @@
 20231011	21:31:22	e38f6efc-08a7-4ed8-9dbe-089f400e6134	Error: Not allowed by cors
 20231011	21:31:24	1c49a321-0d7d-40bb-a9e3-e6d0ab162d3f	Error: Not allowed by cors
 20231011	21:33:15	44a67c2b-03a0-423b-9e8d-46d32b37143a	Error: Not allowed by cors
+20231016	13:39:12	a90a67ca-9119-4c84-8be1-bad2d54ec4b7	ReferenceError: data is not defined

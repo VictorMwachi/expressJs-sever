@@ -35,20 +35,17 @@ app.use(express.json())
 
 //serve static files
 app.use(express.static(path.join(__dirname,'public')))
+app.use('subdir',express.static(path.join(__dirname,'public')))
 
-app.get('/', (req,res)=>{
-    res.sendFile(path.join(__dirname,'views','index.html'));
-    res.statusCode = 200;
-})
+//
+app.use('/',require('./routes/root'))
 
-app.get('/blog-post', (req,res)=>{
-    res.sendFile(path.join(__dirname,'views','blog-post.html'));
-    res.statusCode = 200;
-})
+//subdir folder served
+app.use('/subdir',require('./routes/subdir'));
 
-app.get('/old-page',(req,res)=>{
-    res.redirect(301,'new-page.html')
-})
+
+app.use('/employees',require('./routes/api/employees'));
+
 app.get('/*',(req,res)=>{
     res.status(404).sendFile(path.join(__dirname,'views','404.html'));
 })
