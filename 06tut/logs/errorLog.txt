@@ -12,3 +12,7 @@
 20231011	21:31:24	1c49a321-0d7d-40bb-a9e3-e6d0ab162d3f	Error: Not allowed by cors
 20231011	21:33:15	44a67c2b-03a0-423b-9e8d-46d32b37143a	Error: Not allowed by cors
 20231016	13:39:12	a90a67ca-9119-4c84-8be1-bad2d54ec4b7	ReferenceError: data is not defined
+20231023	22:02:04	d95f14ba-5306-4ab3-96f0-adf8b7d9e85c	TypeError: data.filter is not a function
+20231023	22:19:28	917638ac-2eff-42de-a30b-95815297fbd3	TypeError: data.filter is not a function
+20231023	22:21:09	3a979cd2-2759-48dd-a7de-14a3411ad999	TypeError: data.filter is not a function
+20231023	22:22:28	e1af9de5-ed35-4e36-848a-6e0910e08814	TypeError: data.filter is not a function
