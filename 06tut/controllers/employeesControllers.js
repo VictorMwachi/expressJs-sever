@@ -11,10 +11,16 @@ const getAllEmployees = (req,res) => {
 
 const updateEmployee = (req,res) => {
 	let arrItemIdx;
-	const employee = data.employees.filter((item,idx,arr) => {
-		item.id==req.params.id ? arrItemIdx=idx: undefined;
-		return item
-	})
+	const employee = data.employees.filter((item,idx) => {
+		if(item.id==req.body.id){
+			arrItemIdx = idx;
+			return item;
+		}
+		else {
+			return undefined;
+		}
+	})[0]
+	//console.log(employee,arrItemIdx)
 	if(arrItemIdx){
 		employee.firstname = req.body.firstname
 		employee.lastname = req.body.lastname
@@ -23,7 +29,7 @@ const updateEmployee = (req,res) => {
 		res.json(data.employees)
 	}
 	else {
-		res.json("error");
+		res.status(400).json("error employee not found");
 	}
 }
 
@@ -34,11 +40,13 @@ const addEmployee = (req,res) => {
 	newEmployee.lastname = req.body.lastname
 	data.employees.push(newEmployee);
 	data.setEmployees(data.employees)
-	res.json(data.employees)
+	res.status(201).json(data.employees)
 }
 
-const deleteEmployee = (req,res) => {
-	res.json({"id":req.body.id})
+const deleteEmployee = (req, res) => {
+	const employees = data.employees.filter(item => item.id !== req.body.id)
+	data.setEmployees(employees)
+	res.json(data.employees)
 }
 
 //get employee with corresponding id, assume id is unique for every employee
