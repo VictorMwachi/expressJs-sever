@@ -24,8 +24,8 @@ app.use('subdir',express.static(path.join(__dirname,'public')))
 
 //
 app.use('/',require('./routes/root'))
-app.use('/register',require('./routes/register'))
-app.use('/auth',require('./routes/auth'))
+app.use('/register',require('./routes/register'));
+app.use('/auth',require('./routes/auth'));
 
 //subdir folder served
 app.use('/subdir',require('./routes/subdir'));
