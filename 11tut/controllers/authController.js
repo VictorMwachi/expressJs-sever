@@ -28,8 +28,35 @@ const handleLogin = async (req,res) => {
 
 	//send message password doesnt match
 	if(match){
-		//json web token
-		return res.json({"message":`Sucess! ${foundUser.username} logged in`});
+		//create access json web token
+		const accessToken = jwt.sign(
+			{"username":foundUser.username},
+			process.env.ACCESS_TOKEN_SECRET,
+			{expiresIn: '60s'}
+			);
+
+		//create refresh json web token
+		const refreshToken = jwt.sign(
+			{"username":foundUser.username},
+			process.env.REFRESH_TOKEN_SECRET,
+			{expiresIn: '1d'}
+			);
+
+		//array of other users
+		const otherUsers = userDB.users.filter(person => person.username !== foundUser.username);
+
+		//save user together with the token
+		const currentUser = {...foundUser, refreshToken}
+
+		userDB.setUsers([...otherUsers,currentUser]);
+
+
+		await fsPromises.writeFile(
+			path.join(__dirname,'..','model','users.json'),
+			JSON.stringify(userDB.users)
+			);
+		res.cookie('jwt', refreshToken, {httpOnly: true, maxAge:24 * 60 * 60 * 1000 });
+		res.json({accessToken});
 	}
 	else {
 		return res.status(401).json({"message":"incorrect password kindly try again"});
