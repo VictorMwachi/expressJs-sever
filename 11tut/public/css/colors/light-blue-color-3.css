@@ -1,0 +1,29 @@
+#main-navigation ul li a{border-left:1px solid #0dcde2;}
+#main-navigation ul li:last-child a { border-right:1px solid #0dcde2;}
+.button.color,.button.grey:hover,#filterable li a:hover,#filterable li a.active,.pagination .current,.pagination ul li a:hover,ul.accordion li.accordion-item.selected .accordion-switch .togglegfx {   border-bottom:1px solid #0dcde2;}
+a, a > *,ul.accordion li.accordion-item.selected .accordion-switch,.tabs-nav li.active a,ul.contact-info-widget li a:hover, .portfolio-item-title a:hover,ul.social-icons.header li a:hover i,
+ul.accordion li.accordion-item.selected .accordion-switch,  .team-member h5,  .permalink a:hover,ul.post-meta li a:hover,ul.sidebar-nav li a:hover,.tabs-nav li.active a span,#header-links h4 span {color: #2debff;}
+#main-navigation ul ul li a:hover,#main-navigation ul ul li a:hover i {  color:#2debff!important;}
+#main-navigation li:hover a,.button.color,.button.grey:hover,#filterable li a:hover, #filterable li a.active,ul.single-project-list li span,.bar_graph li span, .plan-name.best-buy,.pagination .current,.pagination ul li a:hover,.sidebar  ul.popular-tags li a:hover,table.simple-table th,
+.flex-control-nav li a.flex-active,.flex-caption,.flex-control-nav li a:hover {background: #2debff;}
+ #wrapp{  border-top: 6px solid #1bddf2;}
+#main-navigation,.ls_large_text_01,.plan-price.best-buy{  background: #1bddf2;}
+ .portfolio-item-link span.portfolio-item-hover {  background: #1bddf2 url('../../images/portfolio-hover.png') no-repeat center 120%;background: rgba(27, 221, 242,0.85) url('../../images/portfolio-hover.png') no-repeat center 120%;}
+ #main-navigation ul li {  border-left: 1px solid #2debff;}
+ #main-navigation ul li:last-child  { border-right:1px solid #2debff;}
+ .ls-fullwidth .ls-nav-prev:hover{background:#2debff url("../../images/slider-prev.png") 50% 50% no-repeat;}
+.ls-fullwidth .ls-nav-next:hover{background:#2debff url("../../images/slider-next.png") 50% 50% no-repeat;}
+.instagram-widget div a:hover,.instagram-widget.inner div a:hover{ border: 3px solid #2debff }
+.flickr-widget li:hover ,.flickr-widget.inner li:hover{ border: 3px solid #2debff }
+.flex-direction-nav li .flex-next:hover  {background:#2debff url("../../images/slider-next.png") 50% 50% no-repeat;}
+.flex-direction-nav li .flex-prev:hover  { background:#2debff url("../../images/slider-prev.png") 50% 50% no-repeat;}
+ul.accordion li.accordion-item.selected .accordion-switch .togglegfx {  background:#2debff url('../../images/accordion-toggle.png') no-repeat left bottom; }
+.tabs-nav li.active a {border-top: 1px solid #2debff;}
+ul.single-project-list li span {  background:#2debff url("../../images/check.png") center center no-repeat;}
+.jcarousel-next,.jcarousel-prev { background: #2debff url("../../images/carousel-prev-next.png") 110% 50% no-repeat; border-bottom: 1px solid #0dcde2;}
+.jcarousel-prev { background: #2debff url("../../images/carousel-prev-next.png") -10% 50% no-repeat;   }
+.jcarousel-next:hover,.jcarousel-next:focus,.jcarousel-next:active,.jcarousel-prev:hover,.jcarousel-prev:focus,.jcarousel-prev:active { background-color: #2debff; border-bottom:1px solid #0dcde2; }
+.jcarousel-next-disabled,.jcarousel-next-disabled:hover,.jcarousel-next-disabled:focus,.jcarousel-next-disabled:active,.jcarousel-prev-disabled,.jcarousel-prev-disabled:hover,
+.jcarousel-prev-disabled:focus,.jcarousel-prev-disabled:active {  background-color: #acacac;  border-bottom:1px solid #909090; cursor: auto;}
+.sidebar  ul.popular-tags li a:hover {border-bottom:1px solid #0dcde2; }
+.feature-block i:hover{background: #1bddf2; border-color:#0dcde2;}

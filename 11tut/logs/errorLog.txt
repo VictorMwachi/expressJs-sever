@@ -1,0 +1,18 @@
+20231011	21:18:35	43a07218-033d-4475-a416-710648752eaa	Error: Not allowed by cors
+20231011	21:18:52	b461eb53-2382-495e-9755-d2707f724939	Error: Not allowed by cors
+20231011	21:20:20	2f65f923-27d9-4c13-9a96-fad74d3c6afa	Error: Not allowed by cors
+20231011	21:20:31	53d4b90d-141e-4d53-9394-651e5e0ff3ef	Error: Not allowed by cors
+20231011	21:30:46	cbba96cf-6325-4819-a853-84e67e942fb3	Error: Not allowed by cors
+20231011	21:31:18	ce50c0d9-a67b-43e9-8186-8062bade6439	Error: Not allowed by cors
+20231011	21:31:19	819ac1aa-e0ba-432d-9d63-8476e5d034ba	Error: Not allowed by cors
+20231011	21:31:20	ecd9f12b-6e93-471d-ae33-e00b0a07bf3d	Error: Not allowed by cors
+20231011	21:31:21	8c1ae947-45b0-45f0-9ee6-37442c165e88	Error: Not allowed by cors
+20231011	21:31:22	5929419e-ffea-4e88-81ef-67a2700eacfc	Error: Not allowed by cors
+20231011	21:31:22	e38f6efc-08a7-4ed8-9dbe-089f400e6134	Error: Not allowed by cors
+20231011	21:31:24	1c49a321-0d7d-40bb-a9e3-e6d0ab162d3f	Error: Not allowed by cors
+20231011	21:33:15	44a67c2b-03a0-423b-9e8d-46d32b37143a	Error: Not allowed by cors
+20231016	13:39:12	a90a67ca-9119-4c84-8be1-bad2d54ec4b7	ReferenceError: data is not defined
+20231023	22:02:04	d95f14ba-5306-4ab3-96f0-adf8b7d9e85c	TypeError: data.filter is not a function
+20231023	22:19:28	917638ac-2eff-42de-a30b-95815297fbd3	TypeError: data.filter is not a function
+20231023	22:21:09	3a979cd2-2759-48dd-a7de-14a3411ad999	TypeError: data.filter is not a function
+20231023	22:22:28	e1af9de5-ed35-4e36-848a-6e0910e08814	TypeError: data.filter is not a function
