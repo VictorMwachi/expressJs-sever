@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const path = require('path')
-const verifyJWT = require('../../middleware/verifyJwt');
+const path = require('path');
+const { verifyJWT } = require('../../middleware/verifyJwt');
 
-const employeesControllers = require('../../controllers/employeesControllers')
+const employeesControllers = require('../../controllers/employeesControllers');
 
 router.route('/')
 	.get(verifyJWT,employeesControllers.getAllEmployees)

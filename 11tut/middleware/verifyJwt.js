@@ -4,7 +4,8 @@ require('dotenv').config();
 
 const verifyJWT = (req, res, next) => {
 	const authHeader = req.headers['authorization'];
-	if(!authHeader?.jwt){return res.sendStatus(401)}
+	console.log(authHeader)
+	if(!authHeader){return res.sendStatus(401)}
 	console.log(authHeader);//bearer token
 	const token = authHeader.split(" ")[1];
 	jwt.verify(
@@ -18,4 +19,4 @@ const verifyJWT = (req, res, next) => {
 	next();
 }
 
-module.exports = verifyJWT;
+module.exports = { verifyJWT };
